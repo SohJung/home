@@ -11,12 +11,23 @@
             padding-left: 10px;
         }
         .red {color: red;}
+        #register_input {
+            margin-left: 8px;
+        }
         .s {
             display: inline-block;
-            margin-left: 8px;
             width: 130px;
             text-align: right;
             padding-right: 8px;
+        }
+        #academic_input {
+            margin-left: 8px;
+        }
+        #work {
+            margin-left: 8px;
+        }
+        #self_intro {
+            margin-left: 8px;
         }
     </style>
 </head>
@@ -26,51 +37,51 @@
 <form name="person_info" method="get">
     <p class="p">기본 정보</p>
     <div id="register_input">
-        <div class="s"><label for="name">이름<span class="red">*</span></label></div>
-            <input type="text" name="name" id="name" size="8"><br>
-        <div class="s"><label for="email">이메일<span class="red">*</span></label></div>
-            <input type="email" name="email" id="email" size="15" placeholder="id@domain_name"><br>
-        <div class="s"><label for="pwd">암호<span class="red">*</span></label></div>
-            <input type="password" name="pwd" id="pwd" size="12"><br>
-        <div class="s"><label for="pwdcheck">암호 확인<span class="red">*</span></label></div>
-            <input type="password" name="pwdcheck" id="pwdcheck" size="12"><br>
-        <div class="s"><label for="phone">모바일 폰<span class="red">*</span></label></div>
-            <input type="tel" name="phone" id="phone" size="13" placeholder="010-0000-0000"><br>
-        <div class="s"><label for="homepg">개인 홈페이지</label></div>
-            <input type="url" name="homepg" id="homepg" size="30" placeholder="http://"><br>
-        <div class="s"><label for="address">주소<span class="red">*</span></label></div>
-            <input type="text" name="address" id="address" size="30"><br>
+        <div><label for="name"><span class="s">이름</span><span class="red">*</span></label>
+            <input type="text" name="name" id="name" size="8"></div>
+        <div><label for="email"><span class="s">이메일</span><span class="red">*</span></label>
+            <input type="email" name="email" id="email" size="15" placeholder="id@domain_name"></div>
+        <div><label for="pwd"><span class="s">암호</span><span class="red">*</span></label>
+            <input type="password" name="pwd" id="pwd" size="12"></div>
+        <div><label for="pwdcheck"><span class="s">암호 확인</span><span class="red">*</span></label>
+            <input type="password" name="pwdcheck" id="pwdcheck" size="12"></div>
+        <div><label for="phone"><span class="s">모바일 폰</span><span class="red">*</span></label>
+            <input type="tel" name="phone" id="phone" size="13" placeholder="010-0000-0000"></div>
+        <div><label for="homepg"><span class="s">개인 홈페이지</span></label>
+            <input type="url" name="homepg" id="homepg" size="30" placeholder="http://"></div>
+        <div><label for="address"><span class="s">주소</span><span class="red">*</span></label>
+            <input type="text" name="address" id="address" size="30"></div>
     </div>
     <p class="p">학 력</p>
     <div id="academic_input">
-        <div class="s"><label for="uni">학교 명<span class="red">*</span></label></div>
-            <input type="text" name="uni" id="uni" size="12"><br>
-        <div class="s"><label for="major">전공<span class="red">*</span></label></div>
-            <input type="text" name="major" id="major" size="12"><br>
-        <div class="s">졸업 여부<span class="red">*</span></div>
+        <div><label for="uni"><span class="s">학교 명</span><span class="red">*</span></label>
+            <input type="text" name="uni" id="uni" size="12"></div>
+        <div><label for="major"><span class="s">전공</span><span class="red">*</span></label>
+            <input type="text" name="major" id="major" size="12"></div>
+        <div><span class="s">졸업 여부</span><span class="red">*</span>
             <select name="graduation_status" id="status1">
                 <option value="0">---선택---</option>
                 <option value="1">졸업예정</option>
                 <option value="2">졸업</option>
-            </select><br>
-        <div class="s">졸업(예정)일</div>
-            <input type="date"><br>
+            </select></div>
+        <div><span class="s">졸업(예정)일</span>
+            <input type="date"></div>
     </div>
     <p class="p">업무 경력</p>
     <div id="work">
-        <div class="s"><label for="co">근무업체명</label></div>
-            <input type="text" name="co" id="co" size="20"><br>
-        <div class="s"><label for="position">직위</label></div>
-            <input type="text" name="position" id="position" size="10"><br>
-        <div class="s"><label for="comments">담당 업무</label></div>
-            <textarea name="comments" id="comments" rows="10" cols="80">이전 업체에서 담당한 업무를 기술하시오.</textarea><br>
-        <div class="s"><label for="years">근무년수</label></div>
-            <input type="number" name="years" id="years" min="0" max="10" step="0.5">년<br>
+        <div><label for="co"><span class="s">근무업체명</span></label>
+            <input type="text" name="co" id="co" size="20"></div>
+        <div><label for="position"><span class="s">직위</span></label>
+            <input type="text" name="position" id="position" size="10"></div>
+        <div><label for="comments"><span class="s">담당 업무</span></label>
+            <textarea name="comments" id="comments" rows="10" cols="80">이전 업체에서 담당한 업무를 기술하시오.</textarea></div>
+        <div><label for="years"><span class="s">근무년수</span></label>
+            <input type="number" name="years" id="years" min="0" max="10" step="0.5">년</div>
     </div>
     <p class="p">자기소개서</p>
     <div id="self_intro">
-        <div class="s">첨부파일</div>
-            <input type="file"><br>
+        <div><span class="s">첨부파일</span>
+            <input type="file"></div>
     </div>
     <div style="margin-left: 200px">
         <p><input type="submit" value="제 출">
